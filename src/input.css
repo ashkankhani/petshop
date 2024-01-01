@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: 'vazir';
+    src: url('../assets/fonts/Vazirmatn-Regular.woff2');
+}
+
+nav ul li {
+    @apply py-3 px-5 font-bold hover:text-white;
+}
+
+.cards {
+    @apply grid grid-cols-4 my-6 mx-3 gap-5;
+}
+
+.card {
+    @apply flex items-center bg-white px-4 rounded-lg gap-2 py-7 hover:shadow-lg hover:shadow-black/50;
+}
+
+.product-section {
+    @apply mx-6 rounded-md p-8
+}
+
+.product-cards {
+    @apply grid grid-cols-4 mt-5 gap-5;
+}
+
+.banners {
+    @apply grid grid-cols-2 mx-8 my-16 gap-5;
+}
+
+footer ul {
+    @apply flex justify-center gap-5 border-t-2 p-5;
+}
+footer ul li{
+    @apply font-bold text-blue-600 text-lg;
+}
+
+.dropdown-content {
+    @apply hidden absolute bg-white z-10 min-w-96 p-8 mt-3 border-blue-500 border-2 rounded-md;
+}
+
+.dropdown-content li{
+    @apply text-gray-400 py-1 hover:bg-blue-600 mx-2 rounded-md px-8;
+}
+.dropdown-content li:first-child{
+    @apply text-gray-700 py-1 hover:text-white;
+}
+.dropdown:hover .dropdown-content{
+    @apply flex;
+}
+
+.dropdown {
+    @apply relative inline-block;
+}
+
+.dropdown-content ul {
+    @apply border-l
+}
+
+.dropdown-content ul:last-child{
+    @apply border-none;
+}
+
+.container {
+    @apply flex overflow-x-scroll mx-8 gap-5;
+}
+.container::-webkit-scrollbar{
+    display: none;
+}
+.product-cards {
+    @apply flex-none;
+}
+
+.warpper {
+    @apply flex items-center;
+}
